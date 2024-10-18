@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpongeBob Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>SpongeBob</h1>
+    
+    <div class="image-container">
+        <img id="spongebob-img" src="https://upload.wikimedia.org/wikipedia/en/3/3b/SpongeBob_SquarePants_character.svg" alt="SpongeBob" />
+    </div>
+
+    <p>Count: <span id="count">0</span></p>
+
+    <script>
+        let count = 0;
+        const image = document.getElementById('spongebob-img');
+        const countDisplay = document.getElementById('count');
+
+        image.addEventListener('click', () => {
+            count++;
+            countDisplay.textContent = count;
+        });
+    </script>
+</body>
+</html>
+
